@@ -7,12 +7,11 @@
 
 
 #define LED_PORT  GPIOB
-
 #define LED_PORT_CLOCK (1u <<1)
 
-#define  LED_RED_PIN (1u<<14)
+#define  LED_RED_PIN  (1u<<14)
 #define LED_GREEN_PIN (1u <<12)
-#define LED_BLUE_PIN (1u<<15)
+#define LED_BLUE_PIN  (1u<<15)
 #define LED_YELLOW_PIN (1u << 13)
 
 #define LED_RED_MODE_BIT (1u<<29)
@@ -39,15 +38,16 @@ typedef enum{
 
 
 /* Led's atributes */
-typedef struct{
-	LedColor_Type color; //Color of Led
-	LedState_Type state; //state of Led
-	//uint32_t lastupdate;
-}Led_Type;
+class Led{
+	private:
+						LedColor_Type color; //Color of Led
+						LedState_Type state; //state of Led
+	
+	public:
+					Led(LedColor_Type _color,LedState_Type _state);
+					void setState(LedState_Type _state);
+					LedState_Type getState() const;// can't change value inside func
+};
 
-void Led_ctor(Led_Type * const me,LedColor_Type _color,LedState_Type _state);
-
-void Led_setState(Led_Type *const me,LedState_Type _state);
-LedState_Type Led_getState(Led_Type *const me);
 
 #endif

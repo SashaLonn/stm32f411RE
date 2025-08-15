@@ -385,19 +385,19 @@
           <GroupName>app</GroupName>
           <Files>
             <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\main.c</FilePath>
-            </File>
-            <File>
-              <FileName>led_class.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\led_class.c</FilePath>
-            </File>
-            <File>
               <FileName>led_class.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\led_class.h</FilePath>
+            </File>
+            <File>
+              <FileName>lde_class.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\lde_class.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>main.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\main.cpp</FilePath>
             </File>
           </Files>
         </Group>
@@ -405,14 +405,14 @@
           <GroupName>uart_driver</GroupName>
           <Files>
             <File>
-              <FileName>uart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\uart_driver\uart.c</FilePath>
-            </File>
-            <File>
               <FileName>uart.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\uart.h</FilePath>
+            </File>
+            <File>
+              <FileName>uart.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\uart.cpp</FilePath>
             </File>
           </Files>
         </Group>
